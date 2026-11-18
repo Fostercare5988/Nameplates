@@ -1,4 +1,4 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 
 -- Observed enemy casts, not an inspection of another player's cooldown state.

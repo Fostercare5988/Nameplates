@@ -1,6 +1,6 @@
 -- ForgeLayout: pages built as sections, shown in the addon's window in two
 -- columns and in AddOn Options (ClassicAPI) in one. Load after ForgeUI.lua.
--- First used by FostercareTweaks 1.15.0; see README.md, "Pages and AddOn Options".
+-- First used by Tweaks 1.15.0; see README.md, "Pages and AddOn Options".
 local _, ns = ...
 local UI = ns.UI
 

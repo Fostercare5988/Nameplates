@@ -1,4 +1,4 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 
 local module = FNP:register({

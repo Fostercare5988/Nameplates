@@ -1,4 +1,4 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 
 -- Enemy cast bars. ClassicAPI's cast events, fired for the nameplateN token,

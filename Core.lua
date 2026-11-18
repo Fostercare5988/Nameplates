@@ -1,15 +1,15 @@
--- FostercareNameplates owns only nameplate features and their settings.
+-- Nameplates owns only nameplate features and their settings.
 -- Requires ClassicAPI, SuperWoW and NamPower, checked as loaded; VanillaForge's
 -- UPSTREAM_VERSIONS.json names the versions.
 if type(CLASSIC_API_VERSION) ~= "number" or not SUPERWOW_VERSION or not GetNampowerVersion then
-    DEFAULT_CHAT_FRAME:AddMessage("|cffff2020[FostercareNameplates]|r requires ClassicAPI, SuperWoW and NamPower.", 1, 0.2, 0.2)
+    DEFAULT_CHAT_FRAME:AddMessage("|cffff2020[Nameplates]|r requires ClassicAPI, SuperWoW and NamPower.", 1, 0.2, 0.2)
     return
 end
 
 local FNP = { mods = {}, moduleOrder = {}, overwrites = {} }
-FostercareNameplates = FNP
-if type(FostercareNameplates_Config) ~= "table" then FostercareNameplates_Config = {} end
-local config = FostercareNameplates_Config
+Nameplates = FNP
+if type(Nameplates_Config) ~= "table" then Nameplates_Config = {} end
+local config = Nameplates_Config
 if type(config.overwrites) ~= "table" then config.overwrites = {} end
 
 function FNP:register(module)

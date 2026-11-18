@@ -1,4 +1,4 @@
-# FostercareNameplates
+# Nameplates
 
 Adjustable Blizzard-style nameplates for World of Warcraft 1.12.1. This addon runs
 independently of [Tweaks](https://github.com/Fostercare5988/Tweaks).
@@ -24,13 +24,13 @@ Countdown numbers on auras and cooldown estimates show while the game's
 
 ## Installation and settings
 
-Download `FostercareNameplates.zip` from the [latest release](https://github.com/Fostercare5988/FostercareNameplates/releases/latest) and extract
+Download `Nameplates.zip` from the [latest release](https://github.com/Fostercare5988/Nameplates/releases/latest) and extract
 it into `Interface/AddOns`. The folder must contain
-`FostercareNameplates.toc`. Restart the game so the addon appears in the AddOns list.
+`Nameplates.toc`. Restart the game so the addon appears in the AddOns list.
 
 **The addon starts disabled.** Enable it in the character selection AddOns list
 when ready, then use **`/fnp`** for its settings and live preview, or open the same
-pages under **Game Menu > AddOn Options > FostercareNameplates**. Your enemy
+pages under **Game Menu > AddOn Options > Nameplates**. Your enemy
 nameplate key binding still controls whether the game shows plates.
 The settings master switch takes effect after `/reload`; other feature choices
 apply live while enabled. Settings save per character.

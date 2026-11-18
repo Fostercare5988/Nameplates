@@ -1,4 +1,4 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 local module = FNP:register({ title = "Nameplate Class Colors", category = "Nameplates",
     enabled = true, description = "Changes player nameplate health bars to their class color." })

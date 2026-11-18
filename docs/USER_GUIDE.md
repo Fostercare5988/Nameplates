@@ -1,7 +1,7 @@
-# FostercareNameplates User Guide
+# Nameplates User Guide
 
 Type `/fnp` to open the settings window. The same four pages are also in
-**Game Menu > AddOn Options > FostercareNameplates**, one category each
+**Game Menu > AddOn Options > Nameplates**, one category each
 (General, Text & auras, Target, Casts), in one column at full size. Settings
 save per character and apply right away, except the main switch. The preview
 on every page shows a sample enemy with your choices: at the top right in the
@@ -10,7 +10,7 @@ that cannot take effect, because their feature is off, are dimmed.
 
 ## General
 
-- **Use FostercareNameplates** is the main switch. Type `/reload` after changing
+- **Use Nameplates** is the main switch. Type `/reload` after changing
   it. Off keeps ordinary Blizzard plates and your target-frame castbar, and none
   of this addon's plate hooks or events run. Your other choices are kept.
 - **Features** turn whole parts of the addon on or off: plate size, target and
@@ -54,7 +54,7 @@ that cannot take effect, because their feature is off, are dimmed.
 
 - **Castbars** keep the Blizzard texture and scale with the plate. Set the height
   and the gap below the bar. Grey bars are casts you cannot interrupt. This is
-  separate from the target-frame castbar in FostercareTweaks.
+  separate from the target-frame castbar in Tweaks.
 - **Enemy cooldowns** show abilities seen used by enemy players, newest first,
   with a sweep and the game's countdown marked `~` as an estimate. Set 1–8
   icons, 14–40 px, the shortest cooldown worth showing and the space above the
@@ -66,7 +66,7 @@ that cannot take effect, because their feature is off, are dimmed.
 
 ## Turning the addon on
 
-FostercareNameplates starts disabled. Enable it in the character selection
-AddOns list. It never enables or disables FostercareTweaks, and while it is
+Nameplates starts disabled. Enable it in the character selection
+AddOns list. It never enables or disables Tweaks, and while it is
 disabled none of its files run. The game's enemy-plate key binding still decides
 whether plates show. Restart the game once after first installing it.

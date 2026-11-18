@@ -1,11 +1,11 @@
 ## Interface: 11200
-## Title: |cffff9e38FostercareNameplates|r |cffffd6a8[Fostercare5988]|r
+## Title: |cffff9e38Nameplates|r |cffffd6a8[Fostercare5988]|r
 ## Notes: Adjustable Blizzard-style nameplates. Requires ClassicAPI, SuperWoW and NamPower.
 ## Author: Fostercare5988
-## Version: 1.8.0
-## X-Website: https://github.com/Fostercare5988/FostercareNameplates
+## Version: 1.8.1
+## X-Website: https://github.com/Fostercare5988/Nameplates
 ## DefaultState: disabled
-## SavedVariablesPerCharacter: FostercareNameplates_Config
+## SavedVariablesPerCharacter: Nameplates_Config
 ## LoadSavedVariablesFirst: 1
 
 Core.lua

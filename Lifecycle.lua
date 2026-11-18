@@ -1,11 +1,11 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 
 -- Nameplate lifecycle and GUID bindings (ClassicAPI C_NamePlate).
 
 -- Snapshot the master choice before plate discovery. Changing it requires a
 -- restart so disabling never leaves a partly initialized plate subsystem.
-FNP.nameplatesEnabled = FostercareNameplates_Config.nameplatesEnabled ~= 0
+FNP.nameplatesEnabled = Nameplates_Config.nameplatesEnabled ~= 0
 
 local libnameplate = CreateFrame("Frame", "FNPLibNameplate", UIParent)
 libnameplate.OnInit = {}

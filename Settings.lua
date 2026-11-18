@@ -1,4 +1,4 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 local _, ns = ...
 local UI = ns.UI
@@ -9,8 +9,8 @@ local CD, NP = FNP.NameplateCooldowns, FNP.Nameplates
 -- column, or one at a time in AddOn Options in one column, preview first.
 local RIGHT, SIDE = 264, 208
 local START = -98
-local panel = UI.Window("FostercareNameplatesSettingsGUI", "FostercareNameplates", 500, 440,
-    GetAddOnMetadata("FostercareNameplates", "Version"))
+local panel = UI.Window("NameplatesSettingsGUI", "Nameplates", 500, 440,
+    GetAddOnMetadata("Nameplates", "Version"))
 
 local TAB_LIST = {
     { label = "General", height = 440 },
@@ -65,7 +65,7 @@ local function Hint(page, column, text, options) return layout:Hint(page, column
 -- A switch for one feature module (its own saved key, not an override).
 local function Feature(page, title, text, tip, column)
     local widget = UI.Switch("FNPOpt_" .. string.gsub(title, " ", ""), page, text, tip, 0, 0, function(value)
-        FostercareNameplates_Config[title] = value and 1 or 0
+        Nameplates_Config[title] = value and 1 or 0
         local mod = FNP.mods[title]
         if FNP.nameplatesEnabled and mod and mod.enable then mod:enable() end
         Apply(); Refresh()
@@ -167,10 +167,10 @@ end
 local general = pages[1]
 PreviewOn(general)
 Heading(general, L, "Nameplates")
-local master = UI.Switch("FNPOpt_Master", general, "Use FostercareNameplates",
+local master = UI.Switch("FNPOpt_Master", general, "Use Nameplates",
     "Off keeps Blizzard plates and your target-frame castbar. Takes effect after /reload.", 0, 0,
     function(value)
-        FostercareNameplates_Config.nameplatesEnabled = value and 1 or 0
+        Nameplates_Config.nameplatesEnabled = value and 1 or 0
         Refresh()
     end)
 layout:Switch(general, L, master)
@@ -194,7 +194,7 @@ end)
 UI.Tooltip(reset, "Restore every option to its default. Feature switches stay as they are.")
 layout:Footer(general, reset, 28)
 table.insert(syncs, function()
-    local enabled = FostercareNameplates_Config.nameplatesEnabled ~= 0
+    local enabled = Nameplates_Config.nameplatesEnabled ~= 0
     UI.Sync(master, enabled)
     local text = ""
     if enabled ~= FNP.nameplatesEnabled then text = "Type /reload to apply."
@@ -340,15 +340,15 @@ local function Toggle()
     panel:Show()
 end
 
--- Game Menu > AddOn Options > FostercareNameplates (ClassicAPI): the same four
+-- Game Menu > AddOn Options > Nameplates (ClassicAPI): the same four
 -- pages, one category each, in one column (ForgeLayout.lua).
 book = UI.Book({
-    name = "FostercareNameplates", text = "Open a page under FostercareNameplates, or type /fnp for the settings window.",
+    name = "Nameplates", text = "Open a page under Nameplates, or type /fnp for the settings window.",
     open = function() if not panel:IsShown() then Toggle() end end,
     panel = panel, pages = pages, tabs = TAB_LIST, layout = placing, refresh = Refresh,
     select = function(index) tab = index end,
 })
 
-SLASH_FOSTERCARENAMEPLATES1 = "/fnp"
-SLASH_FOSTERCARENAMEPLATES2 = "/fostercarenameplates"
-SlashCmdList.FOSTERCARENAMEPLATES = Toggle
+SLASH_NAMEPLATES1 = "/fnp"
+SLASH_NAMEPLATES2 = "/nameplates"
+SlashCmdList.NAMEPLATES = Toggle

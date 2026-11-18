@@ -1,4 +1,4 @@
-local FNP = FostercareNameplates
+local FNP = Nameplates
 if not FNP then return end
 
 -- Handlers take fixed parameters, never `...`: in the client's Lua 5.0 a call
@@ -21,7 +21,7 @@ function FNP.SetEventHandler(frame, handler)
 end
 
 function FNP.IsEnabled(key, default)
-    local value = FostercareNameplates_Config[key]
+    local value = Nameplates_Config[key]
     if value == nil then
         local module = FNP.mods[key]
         if module then return module.enabled == true end
@@ -31,7 +31,7 @@ function FNP.IsEnabled(key, default)
 end
 
 function FNP.GetOverride(key, default)
-    local value = FostercareNameplates_Config.overwrites[key]
+    local value = Nameplates_Config.overwrites[key]
     if value == nil then value = FNP.overwrites[key] end
     if value == nil then return default end
     return value
@@ -61,6 +61,6 @@ function FNP.SetNameplateFontSize(text, size)
 end
 
 function FNP.SetOverride(key, value)
-    FostercareNameplates_Config.overwrites[key] = value
+    Nameplates_Config.overwrites[key] = value
     FNP.overwrites[key] = value
 end
