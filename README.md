@@ -1,7 +1,7 @@
 # FostercareNameplates
 
 Adjustable Blizzard-style nameplates for World of Warcraft 1.12.1. This addon runs
-independently of [FostercareTweaks](https://github.com/Fostercare5988/FostercareTweaks).
+independently of [Tweaks](https://github.com/Fostercare5988/Tweaks).
 
 ## Features
 
@@ -18,7 +18,7 @@ switch. Native names, mouseover and targeting stay with the game.
 
 ## Requirements
 
-WoW 1.12.1 build 5875 with **ClassicAPI**, **SuperWoW** and **NamPower**.
+WoW 1.12.1 build 5875 with **[ClassicAPI](https://github.com/brues-code/ClassicAPI)**, **SuperWoW** and **NamPower**.
 Countdown numbers on auras and cooldown estimates show while the game's
 `countdownForCooldowns` setting is 1 (`/console countdownForCooldowns 1`).
 
@@ -35,7 +35,7 @@ nameplate key binding still controls whether the game shows plates.
 The settings master switch takes effect after `/reload`; other feature choices
 apply live while enabled. Settings save per character.
 
-The target-frame castbar stays in FostercareTweaks under **Unit Frames > Combat
+The target-frame castbar stays in Tweaks under **Unit Frames > Combat
 details**. Its switch and grey-castbar option are independent of this addon's view.
 
 ## Performance and timing
