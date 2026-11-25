@@ -1,0 +1,12 @@
+## Interface: 11200
+## Title: |cffff9e38Nameplates|r |cffffd6a8[Fostercare5988]|r
+## Notes: The game's nameplates made readable: plate size, class colours, health, target glow, raid marks, your debuffs and crowd control, enemy cast bars and cooldowns
+## Author: Fostercare5988
+## X-Maintainer: Fostercare5988
+## Version: 1.0.0
+## SavedVariables: NameplatesDB
+## LoadSavedVariablesFirst: 1
+Core.lua
+Plate.lua
+Auras.lua
+Casts.lua
